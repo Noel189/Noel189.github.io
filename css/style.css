@@ -7,14 +7,15 @@
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content 90vh repeat(5,min-content);
+    grid-template-rows: min-content 88vh repeat(5,min-content);
     row-gap: .5rem;
+    background-color: black;
 }
 
 .header{
     grid-column: 1/2;
     grid-row: 1/2;
-    background-color: aliceblue;
+   
 }
 
 .main-content{
@@ -80,4 +81,5 @@ h2{
 
 h1{
     text-align: center;
+    color: #fff;
 }
