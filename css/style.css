@@ -23,15 +23,13 @@
     background-color: antiquewhite;
     background-image: url("../images/awesome.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .navigation{
     grid-column: 1/2;
     grid-row: 3/4;
     background-color: black;
-
-
-
 }
 
 .navigation ul{
