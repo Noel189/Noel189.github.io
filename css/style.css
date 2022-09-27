@@ -7,7 +7,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5vh,57vh,3vh,10vh,10vh,10vh,5vh;
+    grid-template-rows: min-content,90vh,repeat(5,min-content);
     row-gap: .5rem;
 }
 
