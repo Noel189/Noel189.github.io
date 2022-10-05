@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #222;
+}
 
 .container{
     display: grid;
@@ -13,7 +16,7 @@
 .main-content{
     grid-column:2/3;
     grid-row: 2/3;
-    background: linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.5)), url("../images/awesome.jpg");
+    background: linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,.8)), url("../images/awesome.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -24,8 +27,8 @@
     height: 100vh;
     grid-column: 1/2;
     grid-row: 1/end;
-    width: 3rem;
-    background-color: lightgray;
+    width:3rem;
+    background-color: #ffab40;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,17 +36,23 @@
     padding: .5rem;
     z-index: 10;
 }
+.menu-bar{
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.menu-bar:hover .line{
+    width: 2.5rem;
+}
 
 .navigation{
     position: fixed;
     grid-column: 1/2;
     grid-row: 2/4;
-    background-color: black;
     width: 8rem;
     background-color: gray;
     opacity: 0.8;
     height: 100%;
-    /* height: 100vh; */
     left: -8rem;
     display: flex;
     flex-direction: column;
@@ -55,7 +64,7 @@
     width: 2.5rem;
     height: .2rem;
     background-color: #222;
-    margin-bottom: .2rem; 
+    margin-bottom: .6rem; 
 }
 
 .navigation ul{
@@ -68,8 +77,27 @@
     font-size: .6rem;
 }
 
+.line-1,.line-3{
+    width: 1.8rem;
+    transform: all .3s;
+}
+
 .checkbox:checked ~ .navigation{
    left:3rem;
+}
+
+.checkbox:checked ~ .sidebar .line-1{
+    transform: rotate(-405deg) translate(-5px,6px);
+    width: 2.5rem;
+}
+
+.checkbox:checked ~ .sidebar .line-2{
+    opacity: 0;
+}
+
+.checkbox:checked ~ .sidebar .line-3{
+    transform: rotate(405deg) translate(-5px,-6px);
+    width: 2.5rem;
 }
 
 .navigation p{
@@ -94,6 +122,8 @@
     grid-row: 3/4;
     margin-left: 3.5rem;
     padding: .5rem;
+    color: #0091ea;
+ 
 }
 .projects h2{
     color: goldenrod;
@@ -105,6 +135,8 @@
     grid-row: 4/5;
     margin-left: 3.5rem;
     padding: .5rem;
+    color: #0091ea;
+   
 }
 
 .about-me h2{
@@ -117,6 +149,8 @@
     grid-row: 5/6;
     margin-left: 3.5rem;
     padding: .5rem;
+    color: #0091ea;
+
 }
 
 .contact h2{
