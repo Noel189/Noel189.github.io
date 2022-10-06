@@ -3,3 +3,143 @@
     padding: 0;
     margin: 0;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 95vh min-content;
+}
+
+
+.menu-bar{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+/* menu start here */
+.menu{
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+
+.line{
+    width: 2.5rem;
+    height: .2rem;
+    margin-bottom: .6rem;
+    background-color: #222;
+    transition: width .5s;
+}
+
+.line-1,.line-3{
+    width: 1.8rem;
+}
+
+.menu:hover .line{
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.search-bar{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-search{
+    border: none;
+   border-bottom: .1rem solid black;
+   padding: .3rem .8rem;
+   background-color: gray;
+   outline: none;
+   font-size: .8rem;
+   color: goldenrod;
+
+}
+.search-icon{
+    position: relative;
+     right: 1.5rem;
+     top: 0.5rem;
+     font-size: .8rem;
+     color: goldenrod;
+
+}
+
+.search-icon:hover{
+    cursor: pointer;
+}
+
+.checkbox:checked ~ .navigation-bar{
+   margin-left: 0;
+}
+/* menu ends here */
+
+/* navigation-bar starts here */
+
+.navigation-bar{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 6rem;
+    height:100%;
+    background-color: #9e9e9e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin-left: -6rem;
+}
+
+.navigation-pane{
+    margin-top: 10rem;   
+}
+
+.navigation-list{
+    display: flex;
+    height: 20rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation-link:hover{
+    color: goldenrod;
+}
+.year{
+    text-align: center;
+}
+
+/* navigation-bar ends here */
+
+/* display-section starts here*/
+.display-section{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: url("../images/awesome.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* display-section ends here */
+.display-section{
+    background-color: black;
+ 
+}
+
+
+.footer{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-color:goldenrod;
+    text-align: center;
+    padding: 1rem;
+}
