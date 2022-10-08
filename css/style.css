@@ -73,6 +73,7 @@
 .search-icon{
     position: relative;
      right: 2rem;
+     top:0.1rem;
      bottom: 0.1rem;
      font-size: 1.8rem;
      color: goldenrod;
@@ -182,6 +183,7 @@
       height: 200px;
       border-radius: 50%;
       object-fit: cover;
+
 }
 
 .intro{
