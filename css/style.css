@@ -86,6 +86,9 @@ body{
     
 }
 
+strong{
+    color: goldenrod;
+}
 
 .learn-more{
     padding-top: 2rem;
