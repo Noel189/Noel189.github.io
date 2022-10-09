@@ -1,16 +1,23 @@
 
-$(() => {
-  var scrollLink = $(".nav-link-scroll");
+onload = function(){
+   document.querySelector("#about_me").onclick=force_load_aboutPage;
+   document.querySelector("#activities").onclick=force_load_activitiesPage;
+   document.querySelector("#home").onclick=force_load_homePage;
+   document.querySelector("#experience").onclick=force_load_experiencePage;
+}
 
-  //smooth scrolling
-  scrollLink.click(function (e) {
-    e.preventDefault();
-    $("html").animate(
-      {
-        scrollTop: $(this.hash).offset().top,
-        
-      },
-      2000
-    );
-  });
-});
+function force_load_aboutPage(){
+  window.location = "aboutme.html"
+}
+
+function force_load_homePage(){
+  window.location = "index.html"
+}
+
+function force_load_experiencePage(){
+  window.location = "experience.html"
+}
+
+function force_load_activitiesPage(){
+  window.location = "activities.html"
+}
