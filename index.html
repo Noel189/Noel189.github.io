@@ -1,86 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-    crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Person Web Site</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
     <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="css/style.css">
- 
-</head>
-<body>
-  
-  
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" class="checkbox" id="click" hidden />
+      <div class="menu-bar">
+        <label for="click">
+          <div class="menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+        </label>
 
-  <div class="container">
-    <input type="checkbox" class="checkbox" id="click" hidden>
-    <div class="menu-bar">
-      <label for="click">
-        <div class="menu">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
+        <input type="checkbox" class="search-checkbox" id="search" hidden />
+        <div class="search-bar">
+          <input
+            type="text"
+            class="input-search"
+            placeholder="Search here ....."
+          />
+          <label for="search">
+            <span class="material-symbols-outlined search-icon">
+              search
+              </span>
+          ></label>
         </div>
-      </label>
-     
-      <input type="checkbox" class="search-checkbox" id="search" hidden >
-      <div class="search-bar">
-      
-        <input type="text" class="input-search" placeholder="Search here .....">
-       <label for="search"> <i class="fa-solid fa-magnifying-glass search-icon"></i></label>
       </div>
-    
-    </div>
-    <div class="navigation-bar">
-
-      <div class="navigation-pane">
-
-        <ul class="navigation-list">
-          <li class="navigation-item"><a href="#" class="navigation-link">Home</a></li>
-           <li class="navigation-item"><a href="#" class="navigation-link">Activities</a></li>
-           <li class="navigation-item"><a href="#" class="navigation-link">About me</a></li>
-           <li class="navigation-item"><a href="#" class="navigation-link">Projects</a></li>
+      <div class="navigation-bar">
+        <div class="navigation-pane">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Home</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Activities</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">AboutMe</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Projects</a>
+            </li>
           </ul>
+        </div>
+      </div>
+
+      <div class="display-section">
+        <div class="picture-display">
+          <img src="images/ntesfe.jpg" alt="My pic" />
+          <div class="intro">
+            <p>
+              My name is Noel Tesfe, and I'm a
+              <strong>Computer Engineering</strong> student at
+              <strong> Northern Alberta Institute of Technology</strong> in
+              Edmonton I love the challenge of finding a way and discovering
+              solutions.
+            </p>
+          </div>
+
+          <div class="learn-more">
+            <a href="#"
+              >Learn More<span class="material-symbols-outlined">
+                arrow_forward
+              </span></a
+            >
+          </div>
+        </div>
+
+        <div class="side-picture"></div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2022 Noel Tesfe.</p>
+        <p id="last-modified">Last Modified:</p>
       </div>
     </div>
-
-   <div class="display-section">
-     <div class="picture-display">
-      <img src="images/ntesfe.jpg" alt="My pic">
-      <div class="intro">
-      <p>My name is Noel Tesfe, and I'm a <strong>Computer Engineering</strong>  student at <strong> Northern Alberta Institute of Technology</strong> in Edmonton
-        I love to solve problems. Whether it's finding the best way to write a line of code or figuring out which chord fits best into a progression, I love the challenge of finding a way and discovering solutions.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, harum suscipit? Ad eaque, iste perferendis reiciendis sed consequuntur asperiores.
-          </p>
-        </div>
-        
-     <div class="learn-more">
-      <a href="#">Learn More<i class="fa-solid fa-arrow-right"></i></a> 
-           </div>
-     </div>
-
-     
-     <div class="side-picture">
-    
-     </div>   
-
-
-     
-   </div>
-
-   <div class="footer">
-    <p>&copy; 2022 Noel Tesfe.</p>
-    <p id="last-modified">Last Modified:</p>
-   </div>
-
-   </div>
- <script>
-  document.querySelector("#last-modified").innerHTML += document.lastModified;
- </script>
-</body>
+    <script>
+      document.querySelector("#last-modified").innerHTML +=
+        document.lastModified;
+    </script>
+  </body>
 </html>
