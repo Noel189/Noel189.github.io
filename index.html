@@ -46,17 +46,21 @@
       <div class="navigation-bar">
         <div class="navigation-pane">
           <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="index.html" class="navigation-link">Home</a>
+            <li class="navigation-item navigation-link" data-page="home">
+              <!-- <a href="index.html" class="navigation-link">Home</a> -->
+              HOME
             </li>
-            <li class="navigation-item">
-              <a href="#contact" class="navigation-link">Contact</a>
+            <li class="navigation-item navigation-link" data-page="contact">
+              <!-- <a href="#contact" class="navigation-link">Contact</a> -->
+              Contact
             </li>
-            <li class="navigation-item">
-              <a href="#about" class="navigation-link">AboutMe</a>
+            <li class="navigation-item navigation-link" data-page="about">
+              <!-- <a href="#about" class="navigation-link">AboutMe</a> -->
+              About me
             </li>
-            <li class="navigation-item">
-              <a href="#experience" class="navigation-link">Experience</a>
+            <li class="navigation-item navigation-link" data-page="experience">
+              <!-- <a href="#experience" class="navigation-link">Experience</a> -->
+              Experience
             </li>
           </ul>
         </div>
@@ -65,10 +69,11 @@
       <!-- navigationbar ends here -->
 
       <!-- display section starts here -->
-      <div class="display-section">
+      <div class="display-section" id="home">
      
           <div class="header">
           <h1>I AM Noel Tesfe</h1>
+          <p>Computer Engineering student at NAIT.</p>
           </div>
 
           <div class="learn-more">
@@ -122,6 +127,17 @@
     <script>
       document.querySelector("#last-modified").innerHTML +=
         document.lastModified;
+
+        document.querySelectorAll('.navigation-list li').forEach(function(listItem){
+       listItem.addEventListener('click',function(){
+        let topPosition = document.getElementById(listItem.dataset.page).offsetTop-60
+        window.scrollTo({
+          top:topPosition,
+          left:0,
+          behavior:"smooth"
+        })
+       })
+        })
     </script>
   </body>
 </html>
