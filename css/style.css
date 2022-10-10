@@ -261,7 +261,15 @@
     }
 .img-card{
   display: flex;
+  flex-direction: column;
   margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-card p{
+    margin-top: 1rem;
+    color: chartreuse;
 }
     .about-me img{
         border-radius: 2rem;
@@ -282,6 +290,17 @@
         background-color: #212121;
         color: #fff;
     }
+    .experience p{
+        margin-top: 1rem;
+    }
+
+    .experience ul{
+        margin-top: 1rem;
+        list-style: circle;
+        color: chartreuse;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
 
     .contact-me{
         margin-top: .1rem;
@@ -294,6 +313,27 @@
         color: #fff;
 
     }
+
+    .contact-me .social-icons-list
+    {
+        height: 70%;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: flex-end;
+    }
+  .fa-brands{
+    /* display: block; */
+    margin-top: 10rem;
+     color: cornflowerblue;
+     font-size: 1.2rem;
+     transition: color .3s;
+  }
+
+  .fa-brands:hover{
+    color: goldenrod;
+  }
     /* experience ends here */
     .footer{
         background-color:#212121;
