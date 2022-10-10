@@ -10,18 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script> -->
-
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
       <input type="checkbox" class="checkbox" id="click" hidden />
+      <!-- menu-bar starts here -->
       <div class="menu-bar">
         <label for="click">
           <div class="menu">
@@ -45,55 +40,85 @@
           ></label>
         </div>
       </div>
+      <!-- menu-bar ends here -->
+
+      <!-- navigation-bar starts here -->
       <div class="navigation-bar">
         <div class="navigation-pane">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="#" class="navigation-link" id="home">Home</a>
+              <a href="index.html" class="navigation-link">Home</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link" id="activities">Activities</a>
+              <a href="#contact" class="navigation-link">Contact</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link" id="about_me">AboutMe</a>
+              <a href="#about" class="navigation-link">AboutMe</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link" id="experience">Experience</a>
+              <a href="#experience" class="navigation-link">Experience</a>
             </li>
           </ul>
         </div>
       </div>
 
+      <!-- navigationbar ends here -->
+
+      <!-- display section starts here -->
       <div class="display-section">
-        <div class="picture-display">
-          <img src="images/ntesfe.jpg" alt="My pic" />
-          <div class="intro">
-            <p>
-              My name is Noel Tesfe, and I'm a
-              <strong>Computer Engineering</strong> student at
-              <strong> Northern Alberta Institute of Technology</strong> in
-              Edmonton I love the challenge of finding a way and discovering
-              solutions.
-            </p>
+     
+          <div class="header">
+          <h1>I AM Noel Tesfe</h1>
           </div>
 
           <div class="learn-more">
-            <a href="#"
-              >Learn More<span class="material-symbols-outlined">
+            <a href="#">Learn More<span class="material-symbols-outlined">
                 arrow_forward
-              </span></a
-            >
-          </div>
+              </span></a>
+          
         </div>
 
-        <div class="side-picture"></div>
       </div>
+
+      <!-- display section ends here -->
+
+      <!-- about me starts here -->
+      <div class="about-me" id="about">
+        <h1>About Me</h1>
+         <div class="img-card">
+    
+          <img src="/images/ntesfe.jpg" alt="" width="250px">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, maiores!</p>
+         </div>
+         
+        
+      </div>
+      <!-- about me ends here -->
+
+      <!-- experience starts here -->
+      <div class="experience" id="experience">
+        <h1>Experience</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolore!</p>
+      </div>
+
+      <div class="contact-me" id="contact">
+        <h1>Contact</h1>
+       <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+       </ul>
+      </div>
+<!-- experience ends here -->
+     
+<!-- footer starts here -->
 
       <div class="footer">
         <p>&copy; 2022 Noel Tesfe.</p>
         <p id="last-modified">Last Modified:</p>
       </div>
     </div>
+    <!-- footer ends here -->
     <script>
       document.querySelector("#last-modified").innerHTML +=
         document.lastModified;

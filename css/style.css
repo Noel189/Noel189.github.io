@@ -1,12 +1,12 @@
 
 @media screen and (max-width:800px){
     @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap');
-.menu-bar{
+/* .menu-bar{
     display: none;
 }
 .side-picture{
     display: none;
-}
+} */
 
 *{
   box-sizing: border-box;
@@ -130,33 +130,24 @@ strong{
 
 @media screen and (min-width:800px) {
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Overpass+Mono:wght@300&family=Roboto&display=swap');
+    html{
+        scroll-behavior: smooth;
+    }
+    
     *{
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-    }
-body{
-    overflow: hidden;
-}
-    .menu-bar{
-        display: block;
-    }
-    .side-picture{
-        display:block;
-    }
-    
+    }    
     .container{
-        display: grid;
-        grid-template-columns: min-content 1fr min-content min-content;
-        grid-template-rows: min-content 92vh min-content;
+        display: flex;
+         flex-direction: column;
+        
         /* height: 100vh; */
         
     }
-    
-    
+    /* menu bar starts here */
     .menu-bar{
-        grid-column: 1/5;
-        grid-row: 1/2;
         position: fixed;
         width: 100vw;
         display: flex;
@@ -166,7 +157,7 @@ body{
         z-index: 10;
     }
     
-    /* menu start here */
+
     .menu{
         margin-left: .5rem;
         margin-top: .5rem;
@@ -249,20 +240,17 @@ body{
     
     .navigation-bar{
         position: fixed;
-        grid-column: 1/2;
-        grid-row: 2/3;
         width: 8rem;
         height:100%;
         background-color: #212121;
         font-size: 1.5rem;
         left: -10rem;
         transition: all .4s cubic-bezier(.17,.67,.83,.67);
-        opacity: 0.3;
+        opacity: 0.8;
     }
     
     .navigation-pane{
         margin-top: 13rem;
-        margin-left: 1rem;   
     }
     
     .navigation-list{
@@ -320,30 +308,21 @@ body{
     
     /* display-section starts here*/
     .display-section{
-        grid-column: 1/5;
-        grid-row: 2/3;
-        background-color: #212121;
-        display: grid;
-        grid-template-columns:1fr 2fr 2fr 1fr;
-        grid-template-rows: 1fr 400px 1fr;
-        justify-content: flex-start;
-    
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100vh;
+          background: url("../images/bg_images.jpg") no-repeat center /cover;
+
+    }
+
+    .header{
+        color: #212121;
+        font-size: 3rem;
+        margin-left: 10rem;
+        margin-top: 9rem;
     }
     
-    
-    .picture-display{
-        grid-column: 2/3;
-        grid-row: 1/3;
-        border-radius: 50%;
-        padding-top: 4rem;
-        padding-left: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      
-       
-       
-    }
     
     .picture-display img{
           width: 150px;
@@ -353,60 +332,12 @@ body{
           box-shadow: 3px 3px red, -1em 0 0.4em olive;
     }
     
-    .intro{
-    
-       margin-top: 1.8rem;
-        margin-left: 3rem;
-        line-height: 1.8rem;
-    
-    
-    }
-    
-    .side-picture{
-        grid-column: 3/5;
-        grid-row: 1/4;
-       background: url("../images/background_img.png") no-repeat center /cover;
-       background-size: 500px 500px;
-    }
-    
-    
-    .intro  p{
-        color: #fff;
-        font-family: 'Roboto', sans-serif;
-        
-    }
-    
-    .intro p::first-letter{
-        font-size: 2rem;
-        color: goldenrod;
-    }
-    
-    .about{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        text-align: center;
-        font-size: 1.3rem;
-        font-family: 'Dancing Script', cursive;
-        color: #212121;
-        font-weight: 600;
-    }
-    #span{
-        color: #fff;
-        font-family: 'Roboto', sans-serif;
-        text-align: left;
-        padding-bottom: 1rem;
-    }
-    strong{
-        color: goldenrod;
-    }
-    
-    /* display-section ends here */
+
+
     
     .learn-more{
        margin-top: 2rem;
-       /* padding-left: 2rem; */
-       font-size: 1.3rem;
-       color: red;
+       font-size: 2.3rem;
        text-align: center;
        letter-spacing: .2rem;
        transition:transform .5s;
@@ -426,7 +357,7 @@ body{
     }
     
     .learn-more a:hover{
-        color: red;
+        color: #f57f17;
        
     }
     .learn-more:hover{
@@ -436,12 +367,59 @@ body{
     
     .material-symbols-outlined{
         margin-left: .5rem;
+        margin-top: 0.7rem;
 
     
     }
+
+        /* display-section ends here */
+/* about me starts here */
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 2rem;
+        background-color: #212121;
+        color: #fff;
+        padding:1.5rem;
+        height: 100vh;
+    }
+.img-card{
+  display: flex;
+  margin-top: 1rem;
+}
+    .about-me img{
+        border-radius: 2rem;
+
+    }
+
+    /* about me ends here */
+
+    /* experience starts here */
+    .experience{
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        background-color: #212121;
+        color: #fff;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        background-color: #212121;
+        color: #fff;
+
+    }
+    /* experience ends here */
     .footer{
-        grid-row: 3/4;
-        grid-column:1/5;
         background-color:#212121;
         text-align: center;
         padding: 3rem;
