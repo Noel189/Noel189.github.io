@@ -139,6 +139,7 @@
     
     .navigation-link:hover{
         color: goldenrod;
+        cursor: pointer;
         
     }
     
@@ -489,7 +490,7 @@
     
     .navigation-link:hover{
         color: goldenrod;
-        
+        cursor: pointer;
     }
     
     .navigation-item{
