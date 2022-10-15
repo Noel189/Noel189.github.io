@@ -181,7 +181,7 @@
           flex-direction: column;
           justify-content: center;
           height: 100vh;
-          background: linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,.5)) ,url("../images/bg_images.jpg") no-repeat center /cover;
+          background: linear-gradient(to top,rgba(0,0,0,.7),rgba(0,0,0,.6)) ,url("../images/bg_images.jpg") no-repeat center /cover;
           object-fit: cover;
 
     }
@@ -189,25 +189,44 @@
     .header h1{
         color:#ffc107;
         text-align: center;
+        font-size: 2rem;
     }
 
     .header h2{
         color: #ffc107;
         font-size: 2rem;
-        margin-left: 4rem;
+        margin-left:1rem;
         text-align: center;
     }
 
     .header p{
-        margin-top: 2rem; 
-        width:65vw;
-        margin: 0 auto;
-        margin-left:6rem;
+        margin-left:20vw;
         font-size: 1.2rem;
-        padding: 1rem;
+        padding: 1.5rem;
+        color: #9E9E9E;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid  goldenrod;
+        border-radius: 2rem;
+        box-shadow: 1rem .5rem rgb(88, 76, 46);
         
     }
     
+    .deco span::first-letter{
+        color: goldenrod;
+        font-size: 1rem;
+    }
+
+    .header p span{
+        color: goldenrod;
+        font-size: 1rem;
+    }
+
+    .header p::first-letter{
+        color: rgb(233, 173, 20);
+        font-size: 2rem;
+    }
+
     .learn-more{
        margin-top: 6rem;
        font-size: 1.3rem;
@@ -241,7 +260,6 @@
     
     .material-symbols-outlined{
         margin-left: .5rem;
-        /* margin-top: 0.7rem; */
 
     
     }
@@ -539,23 +557,46 @@
     .header h1{
         color:#ffc107;
         text-align: center;
+        font-size: 3rem;
     }
 
     .header h2{
         color: #ffc107;
-        font-size: 4rem;
+        font-size: 4.5rem;
         margin-left: 10rem;
         text-align: center;
     }
 
     .header p{
-        margin-top: 2rem; 
-        width: 25vw;
-        margin: 0 auto;
-        margin-left: 40rem;
-        font-size: 1.2rem;
-        padding: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem; 
+        margin-left: 45vw;
+        font-size: 1.5rem;
+        padding-bottom: 1.2rem;
+        font-weight: bold;
+        color: #9E9E9E;
+        line-height: 2.5rem;
+        text-align: center;
+        border: 1px solid  goldenrod;
+        border-radius: 2rem;
+        box-shadow: .2rem .3rem rgb(88, 76, 46);
+        padding: 2.5rem;
         
+    }
+
+    .deco span::first-letter{
+        color: goldenrod;
+        font-size: 2rem;
+    }
+
+    .header p span{
+        color: goldenrod;
+        font-size: 2rem;
+    }
+
+    .header p::first-letter{
+        color: rgb(233, 173, 20);
+        font-size: 3rem;
     }
     
     
@@ -571,12 +612,12 @@
 
     
     .learn-more{
-       margin-top: 3rem;
+       margin-top: 1rem;
        font-size: 2.3rem;
        text-align: center;
        letter-spacing: .2rem;
        transition:transform .5s;
-       margin-left: 1rem;
+       margin-left: 50vw;
     
       
     }
