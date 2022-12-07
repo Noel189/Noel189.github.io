@@ -287,7 +287,7 @@
 
 .img-card p{
     margin-top: 1rem;
-    color: chartreuse;
+    color: darkgray;
 }
     .about-me img{
         border-radius: 2rem;
@@ -315,7 +315,7 @@
     .experience ul{
         margin-top: 1rem;
         list-style: circle;
-        color: chartreuse;
+        color: darkgray;
         margin-top: 3rem;
         padding: 1rem;
     }
@@ -335,11 +335,11 @@
     .contact-me .social-icons-list
     {
         height: 70%;
-        width: 100%;
+        width: 30%;
         list-style: none;
         display: flex;
         justify-content:space-evenly;
-        align-items: flex-end;
+        /* align-items: flex-end; */
     }
   .fa-brands{
     /* display: block; */
@@ -673,7 +673,7 @@
 .img-card p{
     text-align: center;
     margin-top: 1rem;
-    color: chartreuse;
+    color: darkgray;
     width: 25%;
 }
     .about-me img{
@@ -702,11 +702,13 @@
     .experience ul{
         margin-top: 1rem;
         list-style: circle;
-        color: chartreuse;
+        color: darkgray;
         margin-top: 3rem;
         padding: 1rem;
     }
-
+    .experience ul li{
+       margin-bottom: .3rem;
+    }
     .contact-me{
         margin-top: .3rem;
         display: flex;
