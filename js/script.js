@@ -6,8 +6,7 @@ window.onload = function () {
   //scrolling the window
   document.querySelectorAll(".navigation-list li").forEach(function (listItem) {
     listItem.addEventListener("click", function () {
-        let id = this.getAttribute('data-id')
-      let topPosition = document.querySelector("#"+id).offsetTop - 60;
+      let topPosition = document.querySelector("#"+this.getAttribute('data-id')).offsetTop - 60;
       window.scrollTo({
         top: topPosition,
         left: 0,
