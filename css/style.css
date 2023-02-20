@@ -319,7 +319,16 @@
         margin-top: 3rem;
         padding: 1rem;
     }
-
+    .projects{
+        margin-top: .1rem;
+        padding: 1.5rem;
+        height: 100vh;
+        background-color: #212121;
+        color: #fff;
+    }
+       .projects h1{
+        text-align: center;
+       }
     .contact-me{
         margin-top: .1rem;
         display: flex;
@@ -365,7 +374,7 @@
 }
 
 
-
+/* desktop design */
 
 @media screen and (min-width:800px) {
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Overpass+Mono:wght@300&family=Roboto&display=swap');
@@ -709,6 +718,16 @@
     .experience ul li{
        margin-bottom: .3rem;
     }
+    .projects{
+        margin-top: .3rem;
+        padding: 1.5rem;
+        height: 100vh;
+        background-color: #212121;
+        color: #fff;
+    }
+       .projects h1{
+        text-align: center;
+       }
     .contact-me{
         margin-top: .3rem;
         display: flex;
